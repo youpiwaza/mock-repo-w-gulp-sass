@@ -3,8 +3,12 @@
 
 ## Tasks
 
-Default task, compile src/ style.sass files to dist/ style.css
+Default task, copies assets to dist & compile sass files
 > gulp
+
+Open /dist/index.html on a browser
+
+Strong text should be green if sass is processed correctly
 
 ### Resources
 https://www.npmjs.com/package/gulp-sass
