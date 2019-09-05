@@ -12,10 +12,5 @@ yarn-error.log
 # Exclude Unit tests reports
 coverage/
 
-# Exclude /src, exercise have there own repos
-src/*
-
 # Keep the /src folder
 !src/.gitkeep
-
-clonehere/

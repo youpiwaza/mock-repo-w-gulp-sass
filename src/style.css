@@ -1,0 +1,160 @@
+
+
+
+
+/* Style de base */
+/* Fonts import
+ * https://google-webfonts-helper.herokuapp.com/fonts/rubik?subsets=latin
+ * rubik-regular - latin */
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/Rubik/rubik-v9-latin-regular.eot");
+  src: local("Rubik"), local("Rubik-Regular"),
+    url("./assets/fonts/Rubik/rubik-v9-latin-regular.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/Rubik/rubik-v9-latin-regular.woff2") format("woff2"),
+    url("./assets/fonts/Rubik/rubik-v9-latin-regular.woff") format("woff"),
+    url("./assets/fonts/Rubik/rubik-v9-latin-regular.ttf") format("truetype"),
+    url("./assets/fonts/Rubik/rubik-v9-latin-regular.svg#Rubik") format("svg");
+}
+
+/* rubik-italic - latin */
+@font-face {
+  font-family: "Rubik";
+  font-style: italic;
+  font-weight: 400;
+  src: url("./assets/fonts/Rubik/rubik-v9-latin-italic.eot");
+  src: local("Rubik Italic"), local("Rubik-Italic"),
+    url("./assets/fonts/Rubik/rubik-v9-latin-italic.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/Rubik/rubik-v9-latin-italic.woff2") format("woff2"),
+    url("./assets/fonts/Rubik/rubik-v9-latin-italic.woff") format("woff"),
+    url("./assets/fonts/Rubik/rubik-v9-latin-italic.ttf") format("truetype"),
+    url("./assets/fonts/Rubik/rubik-v9-latin-italic.svg#Rubik") format("svg");
+}
+
+/* rubik-700 - latin */
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/Rubik/rubik-v9-latin-700.eot");
+  src: local("Rubik Bold"), local("Rubik-Bold"),
+    url("./assets/fonts/Rubik/rubik-v9-latin-700.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/Rubik/rubik-v9-latin-700.woff2") format("woff2"),
+    url("./assets/fonts/Rubik/rubik-v9-latin-700.woff") format("woff"),
+    url("./assets/fonts/Rubik/rubik-v9-latin-700.ttf") format("truetype"),
+    url("./assets/fonts/Rubik/rubik-v9-latin-700.svg#Rubik") format("svg");
+}
+
+/* Basic css */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+html {
+  background-color: #3b9c9c;
+
+  /* https://mycolor.space/gradient3?ori=to+right+top&hex=%231BCBBC&hex2=%230853A4&hex3=%23043232&submit=submit */
+  background-image: linear-gradient(to right top, #1bcbbc, #00b8c6, #00a3cb, #008cc9, #0074bc, #0268ab, #015c9b, #00508b, #004c76, #00455e, #003c46, #043232);
+  color: #fff5ee;
+  font-family: "Rubik", sans-serif;
+  transition: all .3s;
+}
+
+body {
+  background-color: #3b9c9c;
+
+  /* https://www.transparenttextures.com/ */
+  background: url("assets/bg.png") repeat;
+  display: flex;
+  justify-content: center;
+}
+
+a,
+a:active,
+a:visited {
+  color: #ff833b;
+}
+
+a:hover {
+  color: #ff9659;
+}
+
+.container {
+  padding: 2.5em .5em;
+  max-width: 1400px;
+  width: 90%;
+}
+
+/* Tooltip text */
+.tooltip_text {
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: .5em;
+  color: #fff;
+  line-height: 1.4em;
+  padding: 1em;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip_text.bottom_left_arrow::after {
+  border-color: rgba(0, 0, 0, .5) transparent transparent transparent;
+  border-style: solid;
+  border-width: 20px 20px 0 20px;
+  bottom: -20px;
+  content: "";
+  height: 0;
+  left: 50px;
+  position: absolute;
+  width: 0;
+}
+
+.tooltip_text.console {
+  bottom: 20px;
+  left: 100px;
+}
+
+.md {
+  background-color: rgba(0, 0, 0, .3);
+  border: 1px dashed black;
+  margin-top: 1em;
+  padding: 1em;
+}
+
+.md tr {
+  padding-bottom: .5em;
+}
+
+.md td {
+  min-width: 200px;
+  padding: .5em 1em;
+}
+
+/* Table de mutliplications */
+table {
+  border-collapse: collapse;
+}
+table,
+th,
+td {
+  border: 1px dashed black;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 1em;
+  vertical-align: middle;
+}
+th {
+  background-color: rgba(0, 0, 0, .5);
+}
+td {
+  background-color: rgba(0, 0, 0, .2);
+}
